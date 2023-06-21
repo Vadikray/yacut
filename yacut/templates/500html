@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% block content %}
+<main>
+    <section class="container my-5 px-4">
+      <h1 class="text-center"><span style="color:red">Ya</span>Cut</h1>
+      <p class="text-center my-4">
+        Создайте короткую ссылку автоматически или предложите свой вариант
+      </p>
+      <p class="text-center my-4">
+        ЧТО ТО ПОШЛО НЕ ТАК<br>
+        ###################<br>
+        500<br>
+        ###################<br>
+      </p>
+
+  </main>
+{% endblock %}
