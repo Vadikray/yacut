@@ -1,10 +1,10 @@
-from flask import render_template, flash, request, redirect
+from flask import flash, redirect, render_template, request
 
 from . import app, db
 from .constans import MAX_LENGTH
 from .forms import URLform
 from .models import URLMap
-from .utils import get_unique_short_id, check_allowed_symbols
+from .utils import check_allowed_symbols, get_unique_short_id
 
 
 @app.route('/', methods=['GET', 'POST'])

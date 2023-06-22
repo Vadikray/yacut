@@ -1,11 +1,11 @@
-from flask import jsonify, request
 from http import HTTPStatus
 
+from flask import jsonify, request
 
 from . import app, db
 from .error_handlers import InvalidAPIUsage
 from .models import URLMap
-from .views import get_unique_short_id, check_allowed_symbols
+from .views import check_allowed_symbols, get_unique_short_id
 
 
 @app.route('/api/id/', methods=['POST'])
